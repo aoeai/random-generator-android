@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Random Generator</string>
+    <string name="menu_communication">Communication</string>
+</resources>

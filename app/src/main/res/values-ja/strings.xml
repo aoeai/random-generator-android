@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">占いをする</string>
     <string name="menu_communication">コミュニケーション</string>
+    <string name="about">について</string>
+    <string name="local">本地</string>
+    <string name="communication">通信</string>
 </resources>

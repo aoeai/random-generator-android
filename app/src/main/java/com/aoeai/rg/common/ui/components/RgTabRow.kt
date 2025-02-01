@@ -15,7 +15,6 @@ import androidx.compose.foundation.selection.selectable
 import androidx.compose.foundation.selection.selectableGroup
 import androidx.compose.material.ripple.rememberRipple
 import androidx.compose.material3.Icon
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -25,11 +24,13 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.scale
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.semantics.clearAndSetSemantics
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.aoeai.rg.Destination
 import com.aoeai.rg.common.ui.theme.GradientMediumBlue
 import java.util.Locale
@@ -49,7 +50,7 @@ fun RgTabRow(
         Row(Modifier.selectableGroup()) {
             allScreens.forEach { screen ->
                 RgTab(
-                    text = screen.route,
+                    text = LocalContext.current.getString(screen.route),
                     icon = screen.icon,
                     onSelected = { onTabSelected(screen) },
                     selected = currentScreen == screen
@@ -100,7 +101,7 @@ private fun RgTab(
         Icon(imageVector = icon, contentDescription = text, tint = tabTintColor, modifier = Modifier.scale(1.5f))
         if (selected) {
             Spacer(Modifier.width(12.dp))
-            Text(text.uppercase(Locale.getDefault()), color = tabTintColor)
+            Text(text.uppercase(Locale.getDefault()), color = tabTintColor, fontSize = 16.sp)
         }
     }
 }

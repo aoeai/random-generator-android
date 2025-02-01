@@ -46,12 +46,13 @@ tasks.register<JacocoReport>("jacocoTestReport") {
 android {
     namespace = "com.aoeai.rg"
     compileSdk = 34
+    
 
     defaultConfig {
         applicationId = "com.aoeai.rg"
         minSdk = 21
         targetSdk = 34
-        versionCode = 1
+        versionCode = 4
         versionName = "1.0.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
@@ -61,12 +62,20 @@ android {
     }
 
     buildTypes {
+        all {
+            // 启用构建缓存
+            isCrunchPngs = true
+        }
         release {
             isMinifyEnabled = true
+            isShrinkResources = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            ndk {
+                debugSymbolLevel = "FULL"
+            }
         }
         getByName("debug") {
             testCoverage {
@@ -120,7 +129,7 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     implementation(libs.material)
 
-    implementation("com.google.accompanist:accompanist-drawablepainter:0.36.0")
+    implementation(libs.accompanist.drawablepainter)
 
     implementation(libs.androidx.lifecycle.livedata.ktx)
     implementation(libs.androidx.lifecycle.viewmodel.ktx)

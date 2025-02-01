@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">隨機產生器</string>
     <string name="menu_communication">交流</string>
+    <string name="about">關於</string>
+    <string name="local">本地</string>
+    <string name="communication">交流</string>
 </resources>

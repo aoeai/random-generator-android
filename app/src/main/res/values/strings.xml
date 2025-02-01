@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Random Generator</string>
     <string name="menu_communication">Communication</string>
+    <string name="about">about</string>
+    <string name="local">local</string>
+    <string name="communication">Communication</string>
 </resources>

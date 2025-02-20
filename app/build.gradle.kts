@@ -45,13 +45,13 @@ tasks.register<JacocoReport>("jacocoTestReport") {
 
 android {
     namespace = "com.aoeai.rg"
-    compileSdk = 34
+    compileSdk = 35
     
 
     defaultConfig {
         applicationId = "com.aoeai.rg"
         minSdk = 21
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 4
         versionName = "1.0.0"
 
@@ -103,7 +103,7 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
-    buildToolsVersion = "34.0.0"
+    buildToolsVersion = "35.0.0"
 
     applicationVariants.all {
         val variant = this

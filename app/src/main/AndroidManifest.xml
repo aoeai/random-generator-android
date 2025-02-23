@@ -45,6 +45,12 @@
             android:screenOrientation="portrait"
             tools:ignore="DiscouragedApi,LockedOrientationActivity"
             android:theme="@style/Theme.RandomGenerator" />
+        <activity
+            android:name=".double_color_ball.DoubleColorBallActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"
+            android:theme="@style/Theme.RandomGenerator" />
     </application>
 
 </manifest>

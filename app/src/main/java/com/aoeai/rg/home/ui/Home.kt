@@ -29,10 +29,10 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import androidx.core.content.ContextCompat.startActivity
 import com.aoeai.rg.R
 import com.aoeai.rg.bagua.BaguaActivity
 import com.aoeai.rg.common.ui.theme.rgBackground
+import com.aoeai.rg.double_color_ball.DoubleColorBallActivity
 import com.aoeai.rg.home.data.FunctionKeyDto
 import com.aoeai.rg.number.NumberActivity
 import com.aoeai.rg.twelve_chinese_zodiac_animals.TwelveChineseZodiacAnimalsActivity
@@ -47,7 +47,8 @@ fun Home() {
         FunctionKeyDto(
             R.drawable.home_logo_twelve_chinese_zodiac_animals,
             TwelveChineseZodiacAnimalsActivity::class.java
-        )
+        ),
+        FunctionKeyDto(R.drawable.home_logo_double_color_ball, DoubleColorBallActivity::class.java),
     )
 
     Box(
@@ -94,7 +95,7 @@ private fun FunctionKey(data: FunctionKeyDto) {
             .clickable(
                 onClick = {
                     val intent = Intent(packageContext, data.targetActivityCls)
-                    startActivity(packageContext, intent, null)
+                    packageContext.startActivity(intent)
                 }
             ),
         shape = cornerShape,

@@ -1,16 +1,14 @@
 package com.aoeai.rg.bagua.ui
 
 import androidx.compose.ui.test.assertIsDisplayed
-import androidx.compose.ui.test.junit4.createComposeRule
 import androidx.compose.ui.test.onNodeWithTag
 import com.aoeai.rg.common.BaseComposeTest
 import com.aoeai.rg.common.ComposeTools.Companion.randomRefreshButtonOf
 import org.junit.Before
-import org.junit.Rule
 import org.junit.Test
 import org.junit.jupiter.api.DisplayName
 
-class YaoTest : BaseComposeTest() {
+class YaoKtTest : BaseComposeTest() {
 
     @Before
     fun setup() {

@@ -51,6 +51,12 @@
             android:screenOrientation="portrait"
             tools:ignore="DiscouragedApi,LockedOrientationActivity"
             android:theme="@style/Theme.RandomGenerator" />
+        <activity
+            android:name=".lottery_super_lotto.LotterySuperLottoActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"
+            android:theme="@style/Theme.RandomGenerator" />
     </application>
 
 </manifest>

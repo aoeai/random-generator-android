@@ -34,6 +34,7 @@ import com.aoeai.rg.bagua.BaguaActivity
 import com.aoeai.rg.common.ui.theme.rgBackground
 import com.aoeai.rg.double_color_ball.DoubleColorBallActivity
 import com.aoeai.rg.home.data.FunctionKeyDto
+import com.aoeai.rg.lottery_super_lotto.LotterySuperLottoActivity
 import com.aoeai.rg.number.NumberActivity
 import com.aoeai.rg.twelve_chinese_zodiac_animals.TwelveChineseZodiacAnimalsActivity
 import com.aoeai.rg.twelve_zodiac_signs.TwelveZodiacSignsActivity
@@ -43,12 +44,19 @@ fun Home() {
     val keys = listOf(
         FunctionKeyDto(R.drawable.home_logo_bagua, BaguaActivity::class.java),
         FunctionKeyDto(R.drawable.home_logo_number_0_9, NumberActivity::class.java),
-        FunctionKeyDto(R.drawable.home_logo_twelve_zodiac_signs, TwelveZodiacSignsActivity::class.java),
+        FunctionKeyDto(
+            R.drawable.home_logo_twelve_zodiac_signs,
+            TwelveZodiacSignsActivity::class.java
+        ),
         FunctionKeyDto(
             R.drawable.home_logo_twelve_chinese_zodiac_animals,
             TwelveChineseZodiacAnimalsActivity::class.java
         ),
         FunctionKeyDto(R.drawable.home_logo_double_color_ball, DoubleColorBallActivity::class.java),
+        FunctionKeyDto(
+            R.drawable.home_logo_lottery_super_lotto,
+            LotterySuperLottoActivity::class.java
+        ),
     )
 
     Box(

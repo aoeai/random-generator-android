@@ -12,7 +12,7 @@ import org.junit.Test
 import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.DisplayName
 
-class TwelveChineseZodiacAnimalsTest : BaseComposeTest() {
+class TwelveChineseZodiacAnimalsKtTest : BaseComposeTest() {
 
     @Before
     fun setup() {

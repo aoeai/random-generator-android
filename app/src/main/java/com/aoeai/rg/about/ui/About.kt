@@ -3,13 +3,29 @@ package com.aoeai.rg.about.ui
 import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
-import android.net.Uri
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material3.*
-import androidx.compose.runtime.*
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -22,6 +38,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.core.net.toUri
 import com.aoeai.rg.R
 import com.aoeai.rg.common.ui.theme.GradientBrightGold
 import com.aoeai.rg.common.ui.theme.rgBackground
@@ -65,16 +82,30 @@ fun About() {
             Spacer(modifier = Modifier.height(32.dp))
 
             // GitHub Button
-            GitHubButton(
+            CommunicationButton(
                 onClick = {
                     scope.launch {
                         val intent = Intent(
                             Intent.ACTION_VIEW,
-                            Uri.parse("https://github.com/aoeai/random-generator-android")
+                            "https://github.com/aoeai/random-generator-android".toUri()
                         )
                         context.startActivity(intent)
                     }
-                }
+                },
+                logo = R.drawable.about_github_logo
+            )
+            // Gitee Button
+            CommunicationButton(
+                onClick = {
+                    scope.launch {
+                        val intent = Intent(
+                            Intent.ACTION_VIEW,
+                            "https://gitee.com/wyyl1/random-generator-android".toUri()
+                        )
+                        context.startActivity(intent)
+                    }
+                },
+                logo = R.drawable.about_gitee_logo
             )
         }
     }
@@ -95,9 +126,10 @@ private fun getVersionName(context: Context): String {
 }
 
 @Composable
-private fun GitHubButton(
+private fun CommunicationButton(
     modifier: Modifier = Modifier,
-    onClick: () -> Unit
+    onClick: () -> Unit,
+    logo: Int
 ) {
     var isPressed by remember { mutableStateOf(false) }
     val scale by animateFloatAsState(
@@ -121,11 +153,24 @@ private fun GitHubButton(
             containerColor = GradientBrightGold
         )
     ) {
-        Text(
-            text = stringResource(id = R.string.menu_communication),
-            fontSize = 16.sp,
-            fontWeight = FontWeight.Bold
-        )
+        Row(
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.spacedBy(12.dp),
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            Image(
+                painter = painterResource(id = logo),
+                contentDescription = null,
+                modifier = Modifier
+                    .size(32.dp)
+                    .shadow(4.dp, RoundedCornerShape(16.dp))
+            )
+            Text(
+                text = stringResource(id = R.string.menu_communication),
+                fontSize = 16.sp,
+                fontWeight = FontWeight.Bold
+            )
+        }
     }
 }
 

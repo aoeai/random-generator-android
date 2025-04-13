@@ -1,4 +1,4 @@
-package com.aoeai.rg.double_color_ball
+package com.aoeai.rg.lottery_super_lotto
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -9,9 +9,9 @@ import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.aoeai.rg.double_color_ball.ui.DoubleColorBallView
+import com.aoeai.rg.lottery_super_lotto.ui.LotterySuperLottoView
 
-class DoubleColorBallActivity : ComponentActivity() {
+class LotterySuperLottoActivity : ComponentActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
@@ -19,7 +19,7 @@ class DoubleColorBallActivity : ComponentActivity() {
                 modifier = Modifier.fillMaxSize(),
                 color = MaterialTheme.colorScheme.background
             ) {
-                DoubleColorBallView()
+                LotterySuperLottoView()
             }
         }
     }
@@ -28,5 +28,5 @@ class DoubleColorBallActivity : ComponentActivity() {
 @Preview(showBackground = true)
 @Composable
 fun Preview() {
-    DoubleColorBallView()
+    LotterySuperLottoView()
 }

@@ -4,7 +4,7 @@
 
 ## 下载
 
-[Google Play](https://play.google.com/store/apps/details?id=com.aoeai.rg) [Github](https://github.com/aoeai/random-generator-android/releases/download/release-1.0.1/release-1.0.1.apk) [Gitee](https://gitee.com/wyyl1/random-generator-android/releases/download/releases-1.0.1/release-1.0.1.apk)
+[Google Play](https://play.google.com/store/apps/details?id=com.aoeai.rg) [Github](https://github.com/aoeai/random-generator-android/releases) [Gitee](https://gitee.com/wyyl1/random-generator-android/releases)
 
 ## 功能展示
 

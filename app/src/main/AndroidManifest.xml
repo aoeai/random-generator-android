@@ -24,38 +24,26 @@
         <activity
             android:name=".bagua.BaguaActivity"
             android:exported="false"
-            android:screenOrientation="portrait"
-            tools:ignore="DiscouragedApi,LockedOrientationActivity"
             android:theme="@style/Theme.RandomGenerator" />
         <activity
             android:name=".number.NumberActivity"
             android:exported="false"
-            android:screenOrientation="portrait"
-            tools:ignore="DiscouragedApi,LockedOrientationActivity"
             android:theme="@style/Theme.RandomGenerator" />
         <activity
             android:name=".twelve_zodiac_signs.TwelveZodiacSignsActivity"
             android:exported="false"
-            android:screenOrientation="portrait"
-            tools:ignore="DiscouragedApi,LockedOrientationActivity"
             android:theme="@style/Theme.RandomGenerator" />
         <activity
             android:name=".twelve_chinese_zodiac_animals.TwelveChineseZodiacAnimalsActivity"
             android:exported="false"
-            android:screenOrientation="portrait"
-            tools:ignore="DiscouragedApi,LockedOrientationActivity"
             android:theme="@style/Theme.RandomGenerator" />
         <activity
             android:name=".double_color_ball.DoubleColorBallActivity"
             android:exported="false"
-            android:screenOrientation="portrait"
-            tools:ignore="DiscouragedApi,LockedOrientationActivity"
             android:theme="@style/Theme.RandomGenerator" />
         <activity
             android:name=".lottery_super_lotto.LotterySuperLottoActivity"
             android:exported="false"
-            android:screenOrientation="portrait"
-            tools:ignore="DiscouragedApi,LockedOrientationActivity"
             android:theme="@style/Theme.RandomGenerator" />
     </application>
 

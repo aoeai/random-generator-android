@@ -10,18 +10,7 @@
 
 ![](docs/images/showing/home.png)
 
-<style>
-.image-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  width: 100%;
-}
-
-.image-grid img {
-  width: 48%;
-}
-</style>
+<link rel="stylesheet" href="docs/styles/readme.css">
 
 <div class="image-grid">
   <img src="docs/images/showing/bagua.png" />

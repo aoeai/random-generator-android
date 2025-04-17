@@ -1,0 +1,10 @@
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+}
+
+.image-grid img {
+  width: 48%;
+}

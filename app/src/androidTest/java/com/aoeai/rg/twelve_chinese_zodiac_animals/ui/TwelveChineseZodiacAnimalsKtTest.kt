@@ -6,7 +6,8 @@ import androidx.compose.ui.test.performClick
 import com.aoeai.rg.common.BaseComposeTest
 import com.aoeai.rg.common.ComposeTools.Companion.randomRefreshButtonOf
 import com.aoeai.rg.common.ComposeTools.Companion.textValueOf
-import com.aoeai.rg.twelve_chinese_zodiac_animals.data.TwelveChineseZodiacAnimalsCreator.Companion.twelveChineseZodiacAnimals
+import com.aoeai.rg.twelve_chinese_zodiac_animals.data.service.TwelveChineseZodiacAnimalsCreator.Companion.twelveChineseZodiacAnimals
+import com.aoeai.rg.twelve_chinese_zodiac_animals.view.TwelveChineseZodiacAnimalsView
 import org.junit.Before
 import org.junit.Test
 import org.junit.jupiter.api.Assertions.assertTrue

@@ -3,6 +3,7 @@ import com.android.build.gradle.internal.api.ApkVariantOutputImpl
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    alias(libs.plugins.compose.compiler)
     // use JUnit5 for tests
     id("de.mannodermaus.android-junit5") version "1.10.0.0"
     jacoco

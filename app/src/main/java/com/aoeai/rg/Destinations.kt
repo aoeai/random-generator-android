@@ -5,8 +5,8 @@ import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.Info
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.vector.ImageVector
-import com.aoeai.rg.about.ui.About
-import com.aoeai.rg.home.ui.Home
+import com.aoeai.rg.about.view.About
+import com.aoeai.rg.home.view.Home
 
 /**
  * Contract for information needed on every Rally navigation destination

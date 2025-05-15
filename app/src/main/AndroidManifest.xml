@@ -22,27 +22,27 @@
         </activity>
 
         <activity
-            android:name=".bagua.BaguaActivity"
+            android:name=".bagua.view.BaguaActivity"
             android:exported="false"
             android:theme="@style/Theme.RandomGenerator" />
         <activity
-            android:name=".number.NumberActivity"
+            android:name=".number.view.NumberActivity"
             android:exported="false"
             android:theme="@style/Theme.RandomGenerator" />
         <activity
-            android:name=".twelve_zodiac_signs.TwelveZodiacSignsActivity"
+            android:name=".twelve_zodiac_signs.view.TwelveZodiacSignsActivity"
             android:exported="false"
             android:theme="@style/Theme.RandomGenerator" />
         <activity
-            android:name=".twelve_chinese_zodiac_animals.TwelveChineseZodiacAnimalsActivity"
+            android:name=".twelve_chinese_zodiac_animals.view.TwelveChineseZodiacAnimalsActivity"
             android:exported="false"
             android:theme="@style/Theme.RandomGenerator" />
         <activity
-            android:name=".double_color_ball.DoubleColorBallActivity"
+            android:name=".double_color_ball.view.DoubleColorBallActivity"
             android:exported="false"
             android:theme="@style/Theme.RandomGenerator" />
         <activity
-            android:name=".lottery_super_lotto.LotterySuperLottoActivity"
+            android:name=".lottery_super_lotto.view.LotterySuperLottoActivity"
             android:exported="false"
             android:theme="@style/Theme.RandomGenerator" />
     </application>

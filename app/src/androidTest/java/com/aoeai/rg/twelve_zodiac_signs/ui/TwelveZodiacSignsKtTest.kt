@@ -6,6 +6,7 @@ import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.test.performClick
 import com.aoeai.rg.common.BaseComposeTest
 import com.aoeai.rg.common.ComposeTools.Companion.randomRefreshButtonOf
+import com.aoeai.rg.twelve_zodiac_signs.view.TwelveZodiacSignsView
 import org.junit.Before
 import org.junit.Test
 import org.junit.jupiter.api.DisplayName

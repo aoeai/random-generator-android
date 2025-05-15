@@ -23,11 +23,12 @@
 
 ## 词汇表
 
-| abbreviation | full name            | 中文    |
-|--------------|----------------------|-------|
-| -            | double color ball    | 双色球   |
-| -            | lottery draw machine | 摇奖器   |
-| -            | lottery super lotto  | 超级大乐透 |
+| abbreviation | full name             | 中文      |
+|--------------|-----------------------|---------|
+| -            | double color ball     | 双色球     |
+| -            | lottery draw machine  | 摇奖器     |
+| -            | lottery super lotto   | 超级大乐透   |
+| -            | Book of Magic Answers | 神奇的答案之书 |
 
 ## 发布说明
 
